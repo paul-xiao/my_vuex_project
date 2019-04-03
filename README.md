@@ -57,4 +57,58 @@ et
 }
 
 ```
-- vuex
+
+## ElementUI
+
+```
+# import
+import '../theme/index.css'
+import ElementUI from 'element-ui';
+
+Vue.use(ElementUI)
+
+# resetFields
+<el-form-item label="username" prop="username"> //必须有prop属性
+```
+
+## axios config
+
+```
+# install
+npm i axios -D
+
+# create instance
+var $http = axios.create({
+  baseURL: '/', // anything you want
+  timeout: 20000,
+  headers: {
+     'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/json'
+  }
+});
+
+
+# proxyTable 代理失效，原因不明。。
+
+```
+## vuex
+
+```
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state) {
+      state.count++
+    }
+  },
+  actions,
+  getters
+})
+
+```
+
+
+
+## auth config
